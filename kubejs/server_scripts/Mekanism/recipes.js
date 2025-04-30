@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     event.remove({
         output: "mekanism:metallurgic_infuser"
-    }),
+    })
     event.shaped(Item.of('mekanism:metallurgic_infuser', 1), [
         'ABA',
         'CDC',
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
 
     event.remove({
         output: "mekanism:basic_universal_cable"
-    }),
+    })
     event.shaped(Item.of('mekanism:basic_universal_cable', 1), [
         'ABA'
     ], {
@@ -25,9 +25,9 @@ ServerEvents.recipes(event => {
 
     event.remove({
         output: "mekanism:basic_pressurized_tube"
-    }),
+    })
     event.shaped(Item.of('mekanism:basic_pressurized_tube', 1), [
-        "ABA'"
+        'ABA'
     ], {
         A: 'mekanism:ingot_steel',
         B: 'ad_astra:desh_ingot'
@@ -35,11 +35,12 @@ ServerEvents.recipes(event => {
 
     event.remove({
         output: "mekanism:basic_mechanical_pipe"
-    }),
+    })
     event.shaped(Item.of('mekanism:basic_mechanical_pipe', 1), [
-        "ABA'"
+        'ABA'
     ], {
         A: 'mekanism:ingot_steel',
         B: 'mekanism:hdpe_rod'
     })
+
 })
