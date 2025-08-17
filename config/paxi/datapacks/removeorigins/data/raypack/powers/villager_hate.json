@@ -1,0 +1,12 @@
+{
+	"type":"origins:prevent_entity_use",
+	"bientity_condition":{
+		"type":"origins:target_condition",
+		"condition":{
+			"type":"origins:entity_type",
+			"entity_type":"minecraft:villager"
+		}
+	},
+	  "name": "Hideous",
+  "description": "Your appearance is terryfying to everyone and everything, making them refuse to trade with you"
+}

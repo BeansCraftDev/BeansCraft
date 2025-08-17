@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"raypack:hunger_armor",
+		"origins:water_vulnerability",
+		"raypack:pumpkin_hate"
+	],
+	"icon": {
+		"item": "create:precision_mechanism"
+	},
+	"order": 3,
+	"impact": 2,
+	"loading_priority": 1,
+	"name": "Creature of steel",
+	"description": "Part machine, part biological, makes toast and beeps all the time. The machines are strange, intelligent creatures that often refer to themselves as \"toasters\" and have a weird obsession with computer cables."
+
+}

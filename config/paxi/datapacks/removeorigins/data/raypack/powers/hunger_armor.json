@@ -1,0 +1,12 @@
+
+{
+  "type": "origins:attribute",
+    "modifier": {
+    "name": "Natural Armor health bonus",
+    "attribute": "minecraft:generic.armor",
+    "value": 5.0,
+    "operation": "addition"
+  },
+  "name": "Natural Armor",
+  "description": "Your body is made from metals, serving as a natural armor for your squishy interior... wait, why is your interior squishy?"
+}

@@ -1,0 +1,14 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "target_condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:skeleton"
+        },
+    "modifier": {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "addition",
+        "value": 4.0
+    },
+    "name":"Skeleton enemy",
+    "description":"You hate skeletons as much as they hate you! But you can easily bite and break their bones, unlike them."
+}

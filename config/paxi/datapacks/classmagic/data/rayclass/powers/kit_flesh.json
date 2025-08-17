@@ -1,0 +1,39 @@
+{
+  "type": "origins:starting_equipment",
+  "stacks": [
+    {
+      "item": "biomancy:thorn_shield",
+      "tag": "{\"biomancy:nutrients\": 250}"
+    },
+    {
+      "item": "biomancy:acolyte_armor_helmet",
+      "tag": "{\"biomancy:nutrients\": 200}"
+    },
+    {
+      "item": "biomancy:acolyte_armor_chestplate",
+      "tag": "{\"biomancy:nutrients\": 250}"
+    },
+    {
+      "item": "biomancy:acolyte_armor_leggings",
+      "tag": "{\"biomancy:nutrients\": 250}"
+    },
+    {
+      "item": "biomancy:acolyte_armor_boots",
+      "tag": "{\"biomancy:nutrients\": 200}"
+    },
+    {
+      "item": "biomancy:despoil_sickle"
+    },
+    {
+      "item": "biomancy:nutrient_bar",
+      "amount": 64
+    },
+    {
+      "item": "irons_spellbooks:scroll",
+      "tag": "{ISB_Spells: {maxSpells: 1, mustEquip: 0b, data: [{index: 0, id: \"irons_spellbooks:gluttony\", locked: 1b, level: 1}], spellWheel: 0b}}"
+    }
+  ],
+      "name": "Living flesh fanatic",
+  "description": "The craddle needs to be made, otherwise your life is meaningless"
+
+}

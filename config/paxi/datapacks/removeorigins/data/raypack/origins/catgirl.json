@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"origins:fall_immunity",
+		"origins:sprint_jump",
+		"origins:velvet_paws",
+		"raypack:weak_paws",
+		"origins:scare_creepers"
+	],
+	"icon": {
+		"item": "minecraft:orange_wool"
+	},
+	"order": 2,
+	"impact": 2,
+	"loading_priority": 2,
+	"name": "Catgirls",
+	"description": "Catgirls are bizzare. All of them are female, they scare creepers and want to get estrogen - a mysterious pill which is said to give incredible powers."
+}

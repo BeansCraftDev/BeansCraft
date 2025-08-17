@@ -1,0 +1,19 @@
+{
+
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": {
+			"effect": "estrogen:estrogen",
+			"duration": 1000,
+			"amplifier": 1,
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": true
+		},
+		"condition": {
+		"type": "origins:exposed_to_sun"
+		}
+	},
+  "name": "Women power",
+  "description": "As all women do, you gain your powers from sunlight, which is why man keep you in the kitchen. To keep your powers under control."
+}

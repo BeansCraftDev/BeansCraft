@@ -1,0 +1,68 @@
+{
+	"size": "medium",
+	"color": "#ADD8E6",
+    "waves": [{
+        "entities": [
+            {
+                "entity": "minecraft:zombie"
+            }
+        ],
+        "modifiers": [
+
+        ],
+        "rewards": [
+            {
+                "type": "gateways:entity_loot",
+                "entity": "minecraft:cow",
+                "rolls": 25
+            }
+        ],
+        "max_wave_time":2000,
+        "setup_time": 100
+    },
+    {
+        "entities": [
+            {
+                "entity": "minecraft:skeleton"
+            }
+        ],
+        "modifiers": [
+
+        ],
+        "rewards": [
+            {
+                "type": "gateways:entity_loot",
+                "entity": "minecraft:cod",
+                "rolls": 25
+            }
+        ],
+        "max_wave_time":2000,
+        "setup_time": 100
+    }
+    ],   
+        "rewards": [
+        {
+            "type": "gateways:loot_table",
+            "loot_table": "minecraft:chests/simple_dungeon",
+            "rolls": 10,
+            "desc": "rewards.gateways.loot_table.simple_dungeon"
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:mob_effect",
+            "effect": "minecraft:blindness",
+            "duration": 400
+        },
+        {
+            "type": "gateways:summon",
+            "entity": {
+                "entity": "minecraft:witch",
+                "count": 2
+            }
+        }
+    ],
+    "rules": {
+        "allow_discarding": true
+    }
+}

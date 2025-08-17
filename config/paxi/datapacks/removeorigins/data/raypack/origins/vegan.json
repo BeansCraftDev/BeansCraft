@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"origins:vegetarian",
+		"origins:fragile",
+		"raypack:firevuln",
+		"raypack:more_exhaustion"
+	],
+	"icon": {
+		"item": "minecraft:grass"
+	},
+	"order": 0,
+	"impact": 2,
+	"loading_priority": 1,
+		"name": "Vegans",
+	"description": "Far cousins of cow that after years of evolution still refuse to eat any meat."
+}

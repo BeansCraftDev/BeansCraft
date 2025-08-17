@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+  "createdeco:brass_coin",
+  "createdeco:iron_coin",
+  "createdeco:copper_coin",
+  "createdeco:industrial_iron_coin",
+  "createdeco:zinc_coin",
+  "createdeco:gold_coin",
+  "createdeco:netherite_coin"
+  
+  ]
+}
