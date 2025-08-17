@@ -1,0 +1,68 @@
+
+{
+	"content": {
+
+        "bakery_obj_bread": {
+            "type": "item",
+            "content": "minecraft:bread",
+            "amount": {
+                "min": 15,
+                "max": 60
+            },
+            "unitWorth": 2500,
+            "weightMult": 2
+        },
+        "bakery_obj_sugar": {
+            "type": "item",
+            "content": "minecraft:egg",
+            "amount": {
+                "min": 5,
+                "max": 15
+            },
+            "unitWorth": 1500,
+            "weightMult": 2.5
+        },
+        "bakery_obj_cake_base": {
+            "type": "item",
+            "content": "createaddition:cake_base",
+            "amount": {
+                "min": 3,
+                "max": 8
+            },
+            "unitWorth": 2500,
+            "weightMult": 1
+        },
+        "bakery_obj_rotting_bread": {
+            "type": "item",
+            "content": "notsoedible:rotting_bread",
+            "amount": {
+                "min": 10,
+                "max": 25
+            },
+            "unitWorth": 1000,
+            "weightMult": 1
+        },
+        "bakery_obj_candy": {
+            "type": "item",
+            "content": "supplementaries:candy",
+            "amount": {
+                "min": 8,
+                "max": 64
+            },
+            "unitWorth": 1500,
+            "weightMult": 0.8
+        },
+        "bakery_obj_flour": {
+            "type": "item",
+            "content": "create:wheat_flour",
+            "amount": {
+                "min": 10,
+                "max": 64
+            },
+            "unitWorth": 3500,
+            "weightMult": 2.5
+        }
+	}
+
+
+}

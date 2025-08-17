@@ -1,0 +1,8 @@
+{
+	"objectives": [
+		"bakery_objs"
+	],
+	"rewards": [
+		"bakery_rews"
+	]
+}
