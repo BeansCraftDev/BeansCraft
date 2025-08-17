@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "estrogen:estrogen_chip_cookie",
+    "minecraft:cookie",
+    "farmersdelight:sweet_berry_cookie",
+    "farmersdelight:honey_cookie",
+    "liladditions:bean_cookie"
+  ]
+}

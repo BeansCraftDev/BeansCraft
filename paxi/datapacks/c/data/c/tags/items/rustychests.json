@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "magistuarmory:rustedhalfarmor_chestplate",
+    "magistuarmory:rustedcrusader_chestplate",
+    "magistuarmory:rustedchainmail_chestplate",
+    "magistuarmory:rustedchainmail_leggings"
+  ]
+
+}
