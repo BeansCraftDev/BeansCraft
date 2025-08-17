@@ -15,65 +15,152 @@ event.replaceInput(
 event.replaceOutput(
   { mod: 'alexscaves' }, // Arg 1: the filter
   'minecraft:iron_nugget',            // Arg 2: the item to replace
-  'minecraft:iron_ingot'         // Arg 3: the item to replace it with
+  'mekanism:ingot_lead'         // Arg 3: the item to replace it with
    //Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
-  
+
+//fixed the cast iron and industrial ingot recipes conflicting
+event.remove({output:'createbigcannons:cast_iron_ingot'})
+event.remove({output:'createbigcannons:cast_iron_block'})
+
+event.remove({output: 'create:industrial_iron_block'})
+event.remove({output: 'createdeco:industrial_iron_ingot'})
+
+event.stonecutting('2x create:industrial_iron_block','createdeco:industrial_iron_ingot')
+event.recipes.create.compacting('createdeco:industrial_iron_ingot','minecraft:iron_ingot').heated()
+event.recipes.create.compacting('createbigcannons:cast_iron_ingot','minecraft:iron_ingot').superheated()
+event.recipes.create.compacting('createbigcannons:cast_iron_block','minecraft:iron_block').superheated()
+
+event.shapeless(
+  Item.of('createbigcannons:cast_iron_ingot', 9), 
+  [
+    'createbigcannons:cast_iron_block'
+  ]
+)
+event.shapeless(
+  Item.of('createbigcannons:cast_iron_block'), 
+  [
+    '9x createbigcannons:cast_iron_ingot'
+  ]
+)
+
+event.shapeless(
+  Item.of('createbigcannons:cast_iron_nugget', 9), 
+  [
+    'createbigcannons:cast_iron_ingot'
+  ]
+)
+
+
+
+
+event.recipes.create.filling('bloodmagic:plantoil', [Fluid.of('createaddition:seed_oil', (250)), 'minecraft:glass_bottle'])
+
     event.remove({output: "refinedstorage:advanced_processor"})
     event.remove({output: "refinedstorage:destruction_core"})
     event.remove({output: "refinedstorage:construction_core"})
     event.remove({output: "refinedstorage:improved_processor"})
     
-    event.recipes.create(['minecraft:iron_block'],[Fluid.lava(500), 'minecraft:calcite', 'ad_astra:moon_sand'])
+    event.recipes.create.mixing(['minecraft:iron_block'],[Fluid.lava(500), 'minecraft:calcite', 'ad_astra:moon_sand'])
+    event.recipes.create.crushing('mekanism:sawdust', 'createdieselgenerators:wood_chip')
+
+
+    //Pika, if you fix this, I will kiss your feet
+    //cheaper, but prone to failure recipe for silicon
+    //ENIGMATIC LEGACY AND IMMERSIVE ENGINERING ERROR??? THEY DON'T EVEN DO ANYTHING HERE???
+    //event.recipes.create.sequenced_assembly([Item.of('refinedstorage:silicon').withChance(70.0),
+    //    Item.of('minecraft:quartz'),
+    //],
+    //'minecraft:quartz', [
+    //    event.recipes.filling('refinedstorage:incomplete_silicon', [Fluid.water(), 'refinedstorage:incomplete_silicon'])
+    //].transitionalItem('refinedstorage:incomplete_silicon').loops(5)
+    //)
+
+    //expensive, but always reliable version
+    //    event.recipes.create.sequenced_assembly([Item.of('refinedstorage:silicon'),
+    //],
+    //'minecraft:quartz', [
+    //    event.recipes.filling('refinedstorage:incomplete_silicon', [Fluid.lava(), 'refinedstorage:incomplete_silicon'])
+    //].transitionalItem('refinedstorage:incomplete_silicon').loops(5)
+    //)
 
     event.custom({
-            "type": "create:mixing",
-            "ingredients": [
-              {
-                "item": "minecraft:calcite",
-                "amount": 5
-              },
-              {
-                "item": "ad_astra:moon_sand",
-                "amount": 10
-              },
-              {
-                "amount": 500,
-                "fluid": "minecraft:lava",
-                "nbt": {}
-              }
-            ],
-            "results": [
-              {
-                "item": "minecraft:iron_block"
-              }
-            ]
-    })
-    
-
-    event.custom({
-        "type": "create:mixing",
-        "ingredients": [
-          {
-            "item": "minecraft:calcite",
-            "amount": 5
-          },
-          {
-            "item": "ad_astra:moon_sand",
-            "amount": 10
-          },
-          {
-            "amount": 500,
-            "fluid": "minecraft:lava",
-            "nbt": {}
-          }
-        ],
+        "type": "create:sequenced_assembly",
+        "ingredient": {
+            "item": 'minecraft:quartz'
+        },
+        "loops": 5,
         "results": [
-          {
-            "item": "minecraft:iron_block"
-          }
-        ]
-})
+            {
+                "chance": 70.0,
+                "item": "refinedstorage:silicon"
+            },
+            {
+                "chance": 35.0,
+                "item": "minecraft:quartz"
+            }
+        ],
+        "sequence": [
+            {
+                "type": "create:filling",
+                "ingredients": [
+                    {
+                        "item": "refinedstorage:incomplete_silicon"
+                    },
+                    {
+                        "amount": 1000,
+                        "fluid": "minecraft:water",
+                        "nbt": {}
+                    }
+                ],
+                "results": [
+                    {
+                        "item": "refinedstorage:incomplete_silicon"
+                    }
+                ]
+            }
+        ],
+        "transitionalItem": {
+            "item": "refinedstorage:incomplete_silicon"
+        }
+    })
+
+    event.custom({
+        "type": "create:sequenced_assembly",
+        "ingredient": {
+            "item": 'minecraft:quartz'
+        },
+        "loops": 2,
+        "results": [
+            {
+                "item": "refinedstorage:silicon"
+            }
+        ],
+        "sequence": [
+            {
+                "type": "create:filling",
+                "ingredients": [
+                    {
+                        "item": "refinedstorage:incomplete_silicon"
+                    },
+                    {
+                        "amount": 1000,
+                        "fluid": "minecraft:lava",
+                        "nbt": {}
+                    }
+                ],
+                "results": [
+                    {
+                        "item": "refinedstorage:incomplete_silicon"
+                    }
+                ]
+            }
+        ],
+        "transitionalItem": {
+            "item": "refinedstorage:incomplete_silicon"
+        }
+    })
+
 
 
 event.custom({

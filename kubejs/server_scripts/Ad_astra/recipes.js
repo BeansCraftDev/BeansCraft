@@ -5,6 +5,14 @@ ServerEvents.recipes(event => {
     event.remove({output:'ad_astra:compressor'})
     event.remove({output:'ad_astra:etrionic_blast_furnace'})
     event.remove({output:'ad_astra:water_pump'})
+    event.remove({output:'ad_astra:coal_generator'})
+
+    event.remove({output:'ad_astra:fluid_pipe_duct'})
+    event.remove({output:'ad_astra:cable_duct'})
+    event.remove({output:'ad_astra:steel_cable'})
+    event.remove({output:'ad_astra:desh_cable'})
+    event.remove({output:'ad_astra:ostrum_fluid_pipe'})
+    event.remove({output:'ad_astra:desh_fluid_pipe'})
 
     event.shaped(Item.of('ad_astra:compressor', 1), [
         'SPS',

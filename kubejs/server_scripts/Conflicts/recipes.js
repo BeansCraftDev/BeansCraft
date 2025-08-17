@@ -14,9 +14,12 @@ ServerEvents.recipes(event => {
     event.remove({output: "justhammers:stone_impact_hammer"})
     event.remove({output: "justhammers:stone_reinforced_hammer"})
     event.remove({output: "justhammers:stone_reinforced_impact_hammer"})
-    
-  
-    
+    event.remove({type: 'immersiveengineering:squeezer'})    
+    event.remove({id: 'createdieselgenerators:compacting/plant_oil'})
+
+
+
+event.custom({"type":"immersiveengineering:squeezer","energy":6400,"fluid":{"amount":120,"fluid":"createaddition:seed_oil"},"input":{"tag":"forge:seeds"}})
 
     event.remove({type:"createdieselgenerators:basin_fermenting"})
     event.remove({type:"create:mixing", mod:"createdieselgenerators"})
