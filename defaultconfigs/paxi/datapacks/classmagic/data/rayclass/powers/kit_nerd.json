@@ -1,0 +1,39 @@
+{
+  "type": "origins:starting_equipment",
+  "stacks": [
+    {
+      "item": "hexcasting:sub_sandwich",
+      "amount": 3
+    },
+    {
+      "item": "hexcasting:thought_knot"
+    },
+    {
+      "item": "hexcasting:staff/edified"
+    },
+    {
+      "item": "hexcasting:trinket"
+    },
+    {
+      "item": "hexcasting:thought_knot"
+    },
+    {
+      "item": "irons_spellbooks:scroll",
+      "tag": "{ISB_Spells: {maxSpells: 1, mustEquip: 0b, data: [{index: 0, id: \"irons_spellbooks:magic_arrow\", locked: 1b, level: 10}], spellWheel: 0b}}"
+    },
+    {
+      "item": "irons_spellbooks:scroll",
+      "tag": "{ISB_Spells: {maxSpells: 1, mustEquip: 0b, data: [{index: 0, id: \"irons_spellbooks:starfall\", locked: 1b, level: 5}], spellWheel: 0b}}"
+    },
+    {
+      "item": "irons_spellbooks:scroll",
+      "tag": "{ISB_Spells: {maxSpells: 1, mustEquip: 0b, data: [{index: 0, id: \"irons_spellbooks:counterspell\", locked: 1b, level: 1}], spellWheel: 0b}}"
+    },
+    {
+      "item": "minecraft:amethyst_shard",
+      "amount": 5
+    }
+  ],
+    "name": "Hexcasting technician",
+  "description": "you've realized you're stuck in some sort of advanced simulation and learned to harness it's power in a form of hex spells. All you need is some amethyst, media and lot's of coffee to study the mysterious language this world is written in."
+}

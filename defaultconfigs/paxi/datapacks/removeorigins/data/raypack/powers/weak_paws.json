@@ -1,0 +1,15 @@
+{
+  "type": "origins:modify_break_speed",
+  "condition": {
+    "type": "origins:status_effect",
+    "effect": "minecraft:strength",
+    "inverted": true
+  },
+  "modifier": {
+    "name": "Weak Pabs of a weak critter",
+    "value": -0.8,
+    "operation": "multiply_total"
+  },
+  "name": "Weak Paws",
+  "description": "Your weak paws are no use against hard stones. Nothing a good old strength potion can fix!"
+}

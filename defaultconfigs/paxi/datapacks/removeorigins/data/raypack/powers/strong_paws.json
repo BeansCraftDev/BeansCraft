@@ -1,0 +1,18 @@
+{
+  "type": "origins:modify_break_speed",
+  "block_condition": {
+    "type": "origins:in_tag",
+    "tag": "origins:natural_stone"
+  },
+  "condition": {
+    "type": "origins:using_effective_tool",
+    "inverted": true
+  },
+  "modifier": {
+    "name": "Strong Arms stone break speed bonus",
+    "value": 0.06,
+    "operation": "addition"
+  },
+  "name": "Strong Paws",
+  "description": "Your powerful paws allow you to mine faster than others, but to actually get the items, you need to use proper tools"
+}

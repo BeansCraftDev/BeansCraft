@@ -1,0 +1,27 @@
+{
+  "type": "origins:multiple",
+  "prevent_eating": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:pumpkin_pie"
+      }
+    }
+  },
+  "prevent_seeing": {
+    "type": "origins:prevent_entity_render",
+    "entity_condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "head",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:carved_pumpkin"
+        }
+      }
+    }
+  },
+  "name":"Broken entity detection",
+  "description":"For some strange reason, your entity recognition software is composed of janky spaghetti code, making it easy to bypass by wearing a pumpkin. You can't see people wearing pumpkins! This also made you despise pumpkin pies. They don't taste that good anyway"
+}

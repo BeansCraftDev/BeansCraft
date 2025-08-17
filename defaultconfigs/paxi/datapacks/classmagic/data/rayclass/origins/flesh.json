@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "rayclass:kit_flesh"
+  ],
+  "icon": "biomancy:living_flesh",
+  "order": 1,
+  "impact": 0,
+  "name": "Flesh cultist",
+  "description": "From the moment you understood the weakness of steel, it disgusted you..."
+}
