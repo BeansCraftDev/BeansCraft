@@ -1,0 +1,10 @@
+{
+	"order": 1,
+	"replace": true,
+	"origins": [
+
+		],
+	"name": "BTF origins",
+	"missing_name": "None",
+    "missing_description": "You currently don't have an origin selected."
+}

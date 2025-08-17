@@ -1,0 +1,12 @@
+{
+    "name": "Villager Fear",
+    "description": "Villager's are afraid of you and won't trade with you.",
+    "type": "origins:prevent_entity_use",
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:villager"
+        }
+    }
+}

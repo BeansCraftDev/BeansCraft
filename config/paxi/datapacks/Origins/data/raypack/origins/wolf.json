@@ -1,0 +1,15 @@
+{
+	"powers": [	
+		"origins:sprint_jump",
+		"raypack:skeleton_enemy",
+		"raypack:strong_paws"
+	],
+	"icon": {
+		"item": "minecraft:bone"
+	},
+	"order": 0,
+	"impact": 2,
+	"loading_priority": 1,
+		"name": "Wolf",
+	"description": "Two legged wolf-like furry creatures with an unhealthy bone addiction"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "origins:toggle_night_vision",
+  "strength": 0.8,
+  "condition": {
+    "type": "origins:brightness",
+    "comparison": "<=",
+    "compare_to": 0.2
+  },
+    "name": "Cat eyes",
+  "description": "Your eyes see much better in the dark"
+}
+

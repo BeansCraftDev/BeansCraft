@@ -1,0 +1,21 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "name": "Attack Strenght Increase",
+    "attribute": "minecraft:generic.attack_damage",
+    "value": 4,
+    "operation": "addition"
+  },
+"condition": {
+    "type": "origins:equipped_item",
+    "equipment_slot": "mainhand",
+"item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+        "tag": "c:rapiers"
+    }
+}
+},
+    "name": "Rapier Expertise",
+  "description": "You're a natural with a rapier, leading to increased damage when using one."
+}

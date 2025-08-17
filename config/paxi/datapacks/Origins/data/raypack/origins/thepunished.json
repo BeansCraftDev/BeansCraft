@@ -1,0 +1,21 @@
+{
+
+	"powers": [
+		"raypack:hideous",
+		"raypack:villager_hate",
+		"raypack:golem_hate",
+		"raypack:furry_hate",
+		"raypack:firevuln",
+		"origins:weak_arms",
+		"origins:nether_spawn"
+	],
+	"icon": {
+		"item": "minecraft:orange_wool"
+	},
+	"order": 0,
+	"impact": 2,
+	"loading_priority": 1,
+	"unchoosable": true,
+	"name":"The Punished",
+	"description":"You've managed to anger everyone. The villagers, golems, furries, 13-year olds and a powerful spirit fox that cursed you to walk on hellish earth until you learn your lesson. At least you can still respawn... right?"
+}

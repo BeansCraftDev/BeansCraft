@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "order": 10,
+  "enabled": true,
+  "origins": [
+    "rayclass:blood",
+    "rayclass:flesh",
+    "rayclass:mage",
+    "rayclass:nerd",
+    "rayclass:magician"
+  ],
+  "name": "class"
+}

@@ -1,0 +1,12 @@
+{
+    "powers": [
+        "origins:climbing",
+        "raypack:more_exhaustion",
+        "raypack:strong_paws"
+    ],
+    "icon": "etcetera:hammer",
+    "order": 1,
+    "impact": 1,
+    "name": "Clonk",
+    "description": "Clonks are nimble anthropomorphic creatures that can run, jump, climb, craft and mine. They replaced humanity after it went extinct so make sure you won't share their fate!"
+}

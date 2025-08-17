@@ -1,0 +1,17 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "name": "Attack Strenght Increase",
+    "attribute": "minecraft:generic.attack_damage",
+    "value": 4,
+    "operation": "addition"
+  },
+  "condition": {
+    "type": "origins:saturation_level",
+    "comparision": "=>",
+    "compare_to": 0
+  },
+    "name": "Strenght in food",
+  "description": "You pack a punch when you're full. Remember to eat often!"
+}
+

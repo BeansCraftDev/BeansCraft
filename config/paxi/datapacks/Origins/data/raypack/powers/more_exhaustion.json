@@ -1,0 +1,9 @@
+{
+	"type": "origins:modify_exhaustion",
+	"modifier": {
+		"value": 0.8,
+		"operation": "multiply_base"
+	},
+	"name": "Extra exhaustion",
+	"description": "You get more exhausted than other creatures"
+}

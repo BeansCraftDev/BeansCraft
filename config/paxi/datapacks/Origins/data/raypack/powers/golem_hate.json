@@ -1,0 +1,10 @@
+{
+		"type":"origins:action_over_time",
+		"interval":20,
+		"entity_action":{
+			"type":"origins:execute_command",
+			"command":"execute at @s as @e[type=minecraft:iron_golem,distance=..16] run data modify entity @s AngryAt set from entity @p UUID"
+		},
+	"name": "Angry golems",
+	"description": "Golems are specist and will attack you on sight"
+}
